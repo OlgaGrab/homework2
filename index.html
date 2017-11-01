@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Анкета гостя</title>
+</head>
+
+<body>
+    <form method="post" action="https://formspree.io/olga_grabchak@i.ua">
+        <label> Iм'я:<br>
+            <input type="text" name="client-name" required>
+        </label>
+        <br>
+        <br>
+        <label for="second-name">Прізвище:</label>
+        <br>
+        <input type="text" name="second-name" id="second-name" required>
+        <br>
+        <br>
+        <label for="client-email">Пошта:</label>
+        <br>
+        <input type="email" name="client-email" id="client-email" required>
+        <br>
+        <br>
+        <label for="telNo">Номер телефону:</label>
+        <br>
+        <input id="telNo" name="telNo" type="tel" placeholder="+380123456789" pattern="[+380]{4}[\d]{9}" title="+3801234567890">
+        <br>
+        <br>
+        <label>Стать:</label>
+        <br>
+        <lable>
+            <input type="radio" name="client-gender" value="female"> Жіноча
+            </label>
+            <lable>
+                <input type="radio" name="client-gender" value="male"> Чоловіча
+                </label>
+                <br>
+                <br>
+                <label>Вік:<br>
+                <input type="number" name="age" value=age required
+                placeholder="30">
+            </label>
+                <br>
+                <br>
+                <label>Виберіть місто:<br>
+            <input list="cities" name="my-cities" /></label>
+                <datalist id="cities">
+              <option value="Львів">
+              <option value="Іванофранківськ">
+              <option value="Луцьк">
+              <option value="Рівне">
+              <option value="Чернівці">
+            </datalist>
+                <br>
+                <br>
+                <label>Опишіть Вашу проблему</label>
+                <br>
+                <textarea name="textarea" rows="8" cols="40">Введіть Ваш текст тут</textarea>
+                <br>
+                <br>
+                <input type="submit">
+    </form>
+    <br>
+    <br>
+    <a href="table.html">Таблиця </a>
+</body>
+</html>
